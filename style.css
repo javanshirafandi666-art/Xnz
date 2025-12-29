@@ -1,41 +1,51 @@
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:#000;
-  color:#f1f1f1;
-  font-family:Arial,Helvetica,sans-serif;
+/* ÜMUMİ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
+
+body {
+  background-color: #000;
+  color: #fff;
 }
-.center{text-align:center}
-h1{font-size:2.4rem;margin-bottom:10px}
-.lead{font-size:1.5rem;margin-bottom:30px}
-.buttons{display:flex;justify-content:center;gap:20px}
-.btn{
-  padding:14px 30px;
-  border-radius:10px;
-  color:#fff;
-  text-decoration:none;
-  font-size:1.1rem;
+
+/* KONTEYNER */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
-.primary{background:#1e90ff}
-.secondary{background:#555}
-.card{
-  background:#111;
-  padding:22px;
-  border-radius:14px;
-  margin-bottom:40px;
+
+/* CARD */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
 }
-.card img{
-  width:100%;
-  border-radius:12px;
-  margin-bottom:15px;
+
+/* ŞƏKİL */
+.card img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 10px;
 }
-.card p{
-  font-size:1.15rem;
-  line-height:1.7;
+
+/* MƏTN */
+.card p {
+  font-size: 20px;        /* YAZI BÖYÜK */
+  line-height: 1.6;
+  text-align: left;
+  color: #f1f1f1;
 }
-.blur{filter:blur(5px)}
+
+/* MOBİL ÜÇÜN */
+@media (max-width: 600px) {
+  .card p {
+    font-size: 18px;
+  }
+}
